@@ -1,8 +1,8 @@
 {
-  "name": "dyanmicterrain",
-  "version": "1.0.0",
+  "name": "dyanmicTerrain",
+  "version": "1.0.1",
   "description": "babylonjs-extension",
-  "main": "src/index.ts",
+  "main": "dist/index.ts",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
