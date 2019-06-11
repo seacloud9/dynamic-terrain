@@ -7,6 +7,7 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
+        "allowJs": true,
         "experimentalDecorators": true,
         "isolatedModules": false,
         "lib": [
@@ -14,7 +15,7 @@
             "es2015.promise",
             "es5"
         ],
-        "declaration": true,
+        //"declaration": true,
         "outDir": "./"
     },
     "files": [
