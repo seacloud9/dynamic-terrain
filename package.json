@@ -1,6 +1,6 @@
 {
   "name": "dyanmicTerrain",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "babylonjs-extension",
   "main": "./dist/index.ts",
   "scripts": {
