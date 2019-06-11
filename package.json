@@ -1,0 +1,19 @@
+{
+  "name": "dyanmicterrain",
+  "version": "1.0.0",
+  "description": "babylonjs-extension",
+  "main": "src/babylon.dynamicTerrain.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seacloud9/DyanmicTerrain.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seacloud9/DyanmicTerrain/issues"
+  },
+  "homepage": "https://github.com/seacloud9/DyanmicTerrain#readme"
+}
