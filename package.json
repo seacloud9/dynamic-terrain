@@ -2,7 +2,7 @@
   "name": "dyanmic-terrain",
   "version": "1.0.5",
   "description": "babylonjs-extension",
-  "main": "./dist/index.ts",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
