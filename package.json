@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seacloud9/DyanmicTerrain.git"
+    "url": "git+https://github.com/seacloud9/dyanmic-terrain.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/seacloud9/DyanmicTerrain/issues"
+    "url": "https://github.com/seacloud9/dyanmic-terrain/issues"
   },
-  "homepage": "https://github.com/seacloud9/DyanmicTerrain#readme",
+  "homepage": "https://github.com/seacloud9/dyanmic-terrain#readme",
   "devDependencies": {
     "ts-loader": "^6.0.2",
     "typescript": "^3.5.1",
