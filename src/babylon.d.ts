@@ -5247,7 +5247,7 @@ declare module BABYLON {
         unlock(): void;
     }
     /**
-     * This represents the default audio engine used in babylon.
+     * This represents the default audio engine used in BABYLON.
      * It is responsible to play, synchronize and analyse sounds throughout the  application.
      * @see http://doc.babylonjs.com/how_to/playing_sounds_and_music
      */
@@ -10270,7 +10270,7 @@ declare module BABYLON {
          **/
         enableOfflineSupport: boolean;
         /**
-         * Gets or sets a boolean to enable/disable checking manifest if IndexedDB support is enabled (Babylon.js will always consider the database is up to date)
+         * Gets or sets a boolean to enable/disable checking manifest if IndexedDB support is enabled (BABYLON.js will always consider the database is up to date)
          **/
         disableManifestCheck: boolean;
         /**
@@ -10362,7 +10362,7 @@ declare module BABYLON {
         /**
          * Gets or sets a value indicating if we want to disable texture binding optimization.
          * This could be required on some buggy drivers which wants to have textures bound in a progressive order.
-         * By default Babylon.js will try to let textures bound where they are and only update the samplers to point where the texture is
+         * By default BABYLON.js will try to let textures bound where they are and only update the samplers to point where the texture is
          */
         disableTextureBindingOptimization: boolean;
         /**
@@ -10543,7 +10543,7 @@ declare module BABYLON {
         readonly premultipliedAlpha: boolean;
         /**
          * Creates a new engine
-         * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which alreay used the WebGL context
+         * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, BABYLON.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when BABYLON.js is used as a plugin on a system which alreay used the WebGL context
          * @param antialias defines enable antialiasing (default: false)
          * @param options defines further options to be sent to the getContext() function
          * @param adaptToDeviceRatio defines whether to adapt to the device's viewport characteristics (default: false)
@@ -11960,7 +11960,7 @@ declare module BABYLON {
         lockstepMaxSteps: number;
     }
     /**
-     * The null engine class provides support for headless version of babylon.js.
+     * The null engine class provides support for headless version of BABYLON.js.
      * This can be used in server side scenario or for testing purposes
      */
     class NullEngine extends Engine {
@@ -12341,7 +12341,7 @@ declare module BABYLON {
         constructor(type: number, event: PointerEvent | MouseWheelEvent, localX: number, localY: number);
     }
     /**
-     * This type contains all the data related to a pointer event in Babylon.js.
+     * This type contains all the data related to a pointer event in BABYLON.js.
      * The event member is an instance of PointerEvent for all types except PointerWheel and is of type MouseWheelEvent when type equals PointerWheel. The different event types can be found in the PointerEventTypes class.
      */
     class PointerInfo extends PointerInfoBase {
@@ -15494,7 +15494,7 @@ declare module BABYLON {
 
 declare module BABYLON {
     /**
-     * Base class of all the lights in Babylon. It groups all the generic information about lights.
+     * Base class of all the lights in BABYLON. It groups all the generic information about lights.
      * Lights are used, as you would expect, to affect how meshes are seen, in terms of both illumination and colour.
      * All meshes allow light to pass through them unless shadow generation is activated. The default number of lights allowed is four but this can be increased.
      */
@@ -16921,7 +16921,7 @@ declare module BABYLON {
      */
     const ToLinearSpace = 2.2;
     /**
-     * Constant used to define the minimal number value in Babylon.js
+     * Constant used to define the minimal number value in BABYLON.js
      * @ignorenaming
      */
     const Epsilon = 0.001;
@@ -17847,7 +17847,7 @@ declare module BABYLON {
      * Classed used to store (x,y,z) vector representation
      * A Vector3 is the main object used in 3D geometry
      * It can represent etiher the coordinates of a point the space, either a direction
-     * Reminder: Babylon.js uses a left handed forward facing system
+     * Reminder: BABYLON.js uses a left handed forward facing system
      */
     class Vector3 {
         /**
@@ -22055,7 +22055,7 @@ declare module BABYLON {
         toString(): string;
     }
     /**
-     * Base class for the main features of a material in Babylon.js
+     * Base class for the main features of a material in BABYLON.js
      */
     class Material implements IAnimatable {
         private static _TriangleFillMode;
@@ -23271,7 +23271,7 @@ declare module BABYLON {
         setReflectionMode(modeToEnable: string): void;
     }
     /**
-     * This is the default material used in Babylon. It is the best trade off between quality
+     * This is the default material used in BABYLON. It is the best trade off between quality
      * and performances.
      * @see http://doc.babylonjs.com/babylon101/materials
      */
@@ -23587,7 +23587,7 @@ declare module BABYLON {
         protected _useLogarithmicDepth: boolean;
         /**
          * Instantiates a new standard material.
-         * This is the default material used in Babylon. It is the best trade off between quality
+         * This is the default material used in BABYLON. It is the best trade off between quality
          * and performances.
          * @see http://doc.babylonjs.com/babylon101/materials
          * @param name Define the name of the material in the scene
@@ -30307,7 +30307,7 @@ declare module BABYLON {
         private _physicsEngine;
         /**
          * Initializes the Physics helper
-         * @param scene Babylon.js scene
+         * @param scene BABYLON.js scene
          */
         constructor(scene: Scene);
         /**
@@ -31390,7 +31390,7 @@ declare module BABYLON {
 
 declare module BABYLON {
     /**
-   * This represents the base class for particle system in Babylon.
+   * This represents the base class for particle system in BABYLON.
    * Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.
    * Particles can take different shapes while emitted like box, sphere, cone or you can write your custom function.
    * @example https://doc.babylonjs.com/babylon101/particles
@@ -32195,7 +32195,7 @@ declare module BABYLON {
 
 declare module BABYLON {
     /**
-     * Interface representing a particle system in Babylon.js.
+     * Interface representing a particle system in BABYLON.js.
      * This groups the common functionalities that needs to be implemented in order to create a particle system.
      * A particle system represents a way to manage particles from their emission to their animation and rendering.
      */
@@ -32940,7 +32940,7 @@ declare module BABYLON {
 
 declare module BABYLON {
     /**
-     * This represents a particle system in Babylon.
+     * This represents a particle system in BABYLON.
      * Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.
      * Particles can take different shapes while emitted like box, sphere, cone or you can write your custom function.
      * @example https://doc.babylonjs.com/babylon101/particles
@@ -34195,7 +34195,7 @@ declare module BABYLON {
 
 declare module BABYLON {
     /**
-     * This represents a depth renderer in Babylon.
+     * This represents a depth renderer in BABYLON.
      * A depth renderer will render to it's depth map every frame which can be displayed or used in post processing
      */
     class DepthRenderer {
@@ -35454,7 +35454,7 @@ declare module BABYLON {
          * @param defines Define statements that should be added at the beginning of the shader. (default: null)
          * @param uniforms Set of uniform variables that will be passed to the shader. (default: null)
          * @param samplers Set of Texture2D variables that will be passed to the shader. (default: null)
-         * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in babylon.blurPostProcess.ts and kernelBlur.vertex.fx
+         * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in BABYLON.blurPostProcess.ts and kernelBlur.vertex.fx
          * @param onCompiled Called when the shader has been compiled.
          * @param onError Called if there is an error when compiling a shader.
          */
@@ -35795,7 +35795,7 @@ declare module BABYLON {
          * @param defines Define statements that should be added at the beginning of the shader. (default: null)
          * @param uniforms Set of uniform variables that will be passed to the shader. (default: null)
          * @param samplers Set of Texture2D variables that will be passed to the shader. (default: null)
-         * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in babylon.blurPostProcess.ts and kernelBlur.vertex.fx
+         * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in BABYLON.blurPostProcess.ts and kernelBlur.vertex.fx
          * @param onCompiled Called when the shader has been compiled.
          * @param onError Called if there is an error when compiling a shader.
          */
@@ -36222,9 +36222,9 @@ declare module BABYLON {
     *
     * | Value | Type                                | Description |
         * | ----- | ----------------------------------- | ----------- |
-        * | 1     | SCALEMODE_FLOOR                     | [engine.scalemode_floor](http://doc.babylonjs.com/api/classes/babylon.engine#scalemode_floor) |
-        * | 2     | SCALEMODE_NEAREST                   | [engine.scalemode_nearest](http://doc.babylonjs.com/api/classes/babylon.engine#scalemode_nearest) |
-        * | 3     | SCALEMODE_CEILING                   | [engine.scalemode_ceiling](http://doc.babylonjs.com/api/classes/babylon.engine#scalemode_ceiling) |
+        * | 1     | SCALEMODE_FLOOR                     | [engine.scalemode_floor](http://doc.babylonjs.com/api/classes/BABYLON.engine#scalemode_floor) |
+        * | 2     | SCALEMODE_NEAREST                   | [engine.scalemode_nearest](http://doc.babylonjs.com/api/classes/BABYLON.engine#scalemode_nearest) |
+        * | 3     | SCALEMODE_CEILING                   | [engine.scalemode_ceiling](http://doc.babylonjs.com/api/classes/BABYLON.engine#scalemode_ceiling) |
     *
         */
         scaleMode: number;
@@ -36341,7 +36341,7 @@ declare module BABYLON {
          * @param defines String of defines that will be set when running the fragment shader. (default: null)
          * @param textureType Type of textures used when performing the post process. (default: 0)
          * @param vertexUrl The url of the vertex shader to be used. (default: "postprocess")
-         * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in babylon.blurPostProcess.ts and kernelBlur.vertex.fx
+         * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in BABYLON.blurPostProcess.ts and kernelBlur.vertex.fx
          * @param blockCompilation If the shader should not be compiled imediatly. (default: false)
          */
         constructor(
@@ -36373,7 +36373,7 @@ declare module BABYLON {
          * @param defines Define statements that should be added at the beginning of the shader. (default: null)
          * @param uniforms Set of uniform variables that will be passed to the shader. (default: null)
          * @param samplers Set of Texture2D variables that will be passed to the shader. (default: null)
-         * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in babylon.blurPostProcess.ts and kernelBlur.vertex.fx
+         * @param indexParameters The index parameters to be used for babylons include syntax "#include<kernelBlurVaryingDeclaration>[0..varyingCount]". (default: undefined) See usage in BABYLON.blurPostProcess.ts and kernelBlur.vertex.fx
          * @param onCompiled Called when the shader has been compiled.
          * @param onError Called if there is an error when compiling a shader.
          */
@@ -42660,7 +42660,7 @@ declare module BABYLON {
         readonly angularAcceleration: Nullable<Float32Array>;
     }
     /**
-    * Interface representing a pose controlled object in Babylon.
+    * Interface representing a pose controlled object in BABYLON.
     * A pose controlled object has both regular pose values as well as pose values
     * from an external device such as a VR head mounted display
     */
@@ -43042,7 +43042,7 @@ declare module BABYLON {
          */
         _occlusionDataStorage: _OcclusionDataStorage;
         /**
-        * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retireved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decideds to show or hide the object.
+        * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retireved, the query result indicates if the object is visible within the scene or not and based on that BABYLON.Js engine decideds to show or hide the object.
         * The default value is -1 which means don't break the query and wait till the result
         * @see http://doc.babylonjs.com/features/occlusionquery
         */
@@ -45702,7 +45702,7 @@ declare module BABYLON {
 
 declare module BABYLON {
     /**
-     * Base class of all the textures in babylon.
+     * Base class of all the textures in BABYLON.
      * It groups all the common properties the materials, post process, lights... might need
      * in order to make a correct use of the texture.
      */
@@ -45865,7 +45865,7 @@ declare module BABYLON {
         readonly isBlocking: boolean;
         /**
          * Instantiates a new BaseTexture.
-         * Base class of all the textures in babylon.
+         * Base class of all the textures in BABYLON.
          * It groups all the common properties the materials, post process, lights... might need
          * in order to make a correct use of the texture.
          * @param scene Define the scene the texture blongs to
@@ -45887,7 +45887,7 @@ declare module BABYLON {
          */
         getReflectionTextureMatrix(): Matrix;
         /**
-         * Get the underlying lower level texture from Babylon.
+         * Get the underlying lower level texture from BABYLON.
          * @returns the insternal texture
          */
         getInternalTexture(): Nullable<InternalTexture>;
@@ -46039,7 +46039,7 @@ declare module BABYLON {
          */
         delayLoad(): void;
         /**
-         * Parses a color grading texture serialized by Babylon.
+         * Parses a color grading texture serialized by BABYLON.
          * @param parsedTexture The texture information being parsedTexture
          * @param scene The scene to load the texture in
          * @param rootUrl The root url of the data assets to load
@@ -47415,7 +47415,7 @@ declare module BABYLON {
 
 declare module BABYLON {
     /**
-     * This represents a texture in babylon. It can be easily loaded from a network, base64 or html input.
+     * This represents a texture in BABYLON. It can be easily loaded from a network, base64 or html input.
      * @see http://doc.babylonjs.com/babylon101/materials#texture
      */
     class Texture extends BaseTexture {
@@ -47576,7 +47576,7 @@ declare module BABYLON {
         readonly samplingMode: number;
         /**
          * Instantiates a new texture.
-         * This represents a texture in babylon. It can be easily loaded from a network, base64 or html input.
+         * This represents a texture in BABYLON. It can be easily loaded from a network, base64 or html input.
          * @see http://doc.babylonjs.com/babylon101/materials#texture
          * @param url define the url of the picture to load as a texture
          * @param scene define the scene the texture will belong to
@@ -47836,7 +47836,7 @@ declare module BABYLON {
      *
      * **Decoder**
      *
-     * By default, the configuration points to a copy of the Draco decoder files for glTF from the babylon.js preview cdn https://preview.babylonjs.com/draco_wasm_wrapper_gltf.js.
+     * By default, the configuration points to a copy of the Draco decoder files for glTF from the BABYLON.js preview cdn https://preview.babylonjs.com/draco_wasm_wrapper_gltf.js.
      *
      * To update the configuration, use the following code:
      * ```javascript
@@ -48677,7 +48677,7 @@ declare module BABYLON {
 
 declare module BABYLON {
     /**
-     * This represents a set of one or more post processes in Babylon.
+     * This represents a set of one or more post processes in BABYLON.
      * A post process can be used to apply a shader to a texture after it is rendered.
      * @example https://doc.babylonjs.com/how_to/how_to_use_postprocessrenderpipeline
      */

@@ -2,9 +2,9 @@
 ## Installation
 Let's just download the javascript file (`dynamicTerrain.js` or, recommended, the minified version `dynamicTerrain.min.js`) from the BabylonJS [extension repository](https://github.com/BabylonJS/Extensions) folder `DynamicTerrain/dist` :   https://github.com/BabylonJS/Extensions/tree/master/DynamicTerrain/dist    
 
-Then in our code, let's declare this script in a html tag **after** the script tag declaring Babylon.js :
+Then in our code, let's declare this script in a html tag **after** the script tag declaring BABYLON.js :
 ```html
-<script src="babylon.js"></script>
+<script src="BABYLON.js"></script>
 <script src="dynamicTerrain.min.js"></script>
 ```
 ## What is the dynamic terrain ?

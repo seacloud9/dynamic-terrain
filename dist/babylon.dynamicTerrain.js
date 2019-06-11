@@ -1408,4 +1408,4 @@ var BABYLON;
     }());
     BABYLON.DynamicTerrain = DynamicTerrain;
 })(BABYLON || (BABYLON = {}));
-//# sourceMappingURL=babylon.dynamicTerrain.js.map
+//# sourceMappingURL=BABYLON.dynamicTerrain.js.map
